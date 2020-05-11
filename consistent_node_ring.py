@@ -15,6 +15,8 @@ class NodeRing(object):
         self.hash_nodes = hash_nodes
         self.nodes_list = {self.hash(node): node.split("-")[1] for node in nodes}
 
+    
+    #Add virtual node layer
     @staticmethod
     def push_nodes(servers, replicas):
         nodes = []
